@@ -2,10 +2,12 @@
 #ifndef _STM32F4XX_H
 #define _STM32F4XX_H
 
+#include <stdint.h>
 #define GPIOD_BASE 0x40020C00
 
-typedef unsigned int uint32_t;
-typedef unsigned short int uint16_t;
+//typedef unsigned int uint32_t;
+//typedef unsigned short int uint16_t;
+
 typedef struct{
 	uint32_t MODER;
 	uint32_t OTYPER;
