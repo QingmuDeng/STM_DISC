@@ -52,3 +52,9 @@ Mkfile.old
 dkms.conf
 
 *.TMP
+Resources/*
+*.zip
+*.crf
+*.axf
+*.htm
+*.dep

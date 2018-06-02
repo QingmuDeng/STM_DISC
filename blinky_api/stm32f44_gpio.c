@@ -10,6 +10,11 @@ void GPIO_ClearBits(GPIO_typedef *GPIOx, uint16_t GPIO_Pin)
   GPIOx->BSRR_H |= GPIO_Pin;
 }
 
+uint8_t GPIO_ReadBits(GPIO_typedef *GPIOx, uint16_t GPIO_Pin)
+{
+  return ((GPIOx->IDRL & GPIO_Pin) ? 1 : 0);
+}
+
 void GPIO_Init(GPIO_typedef *GPIOx, GPIO_InitTypeDef *GPIO_InitStruct)
 {
   uint16_t pinpos = 0x00, pos = 0x00, currentpin = 0x00;
